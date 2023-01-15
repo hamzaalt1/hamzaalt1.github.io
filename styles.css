@@ -1,0 +1,165 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+html{
+    background-color: black;
+    min-height: 100%;
+    
+}
+.navbar {
+    height: 10vh;
+    overflow: hidden;
+    background-color: black;
+    font-family: Arial;
+    width: 100vw;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+    
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+}
+
+/* Add a left background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: left;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.home{
+    scroll-snap-type:y mandatory;
+}
+.main {
+    display: flex;
+        flex-direction: row;
+        font-size: 30px;
+        text-align: center;
+        
+}
+
+.left {
+    height: 80vh;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    flex: 50%;
+    color: #ddd;
+    font-size: 48px;
+    font-family: 'Dancing Script';
+    
+}
+.left-last{
+    height: 80vh;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    flex: 50%;
+    color: #ddd;
+    font-size: 48px;
+    font-family: 'Dancing Script';
+
+}
+.right {
+    height: 80vh;
+    padding: 10px;
+    flex: 50%;
+    }
+
+
+img{
+    height: 80vh;
+    width: 45;
+}
+.subtitle{
+    font-size: 30px;
+}
+
+.desc{
+    font-size: 20px;
+    
+    font-family: 'Merriweather', sans-serif;
+}
+
+@media (max-width: 1100px) {
+    .main {
+        flex-direction: column;
+    }
+    .left{
+        height: 50vh;
+        color: white;
+    } 
+    .right{
+        height: 50vh;
+    }
+    .landing_image{
+        height: 50vh;
+    }
+    
+}
+
+
+.second{
+    
+    margin-right: 20px;
+    margin-top: 100px;
+
+    
+}
+  
