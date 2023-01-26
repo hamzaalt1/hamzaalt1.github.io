@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The love of my life</title>
+    <link rel="stylesheet" type="text/css" href="gallery.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="words.html">Some words for her</a>
+        <div class="dropdown">
+            <button class="dropbtn">Galleries
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="prayer.html">PRAYERS</a>
+                <a href="us.html">US</a>
+                <a href="her.html">LITERALLY MY WIFE</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="heading">
+            <h3>Dina's <span>concerts</span></h3>
+        </div>
+        <div class="video-container">
+            <div class="video"> <video src='vids/1.MOV'></video></div>
+            <div class="video"> <video src='vids/2.MOV'></video></div>
+            <div class="video"> <video src='vids/3.MOV'></video></div>
+            <div class="video"> <video src='vids/4.MOV'></video></div>
+            <div class="video"> <video src='vids/5.MOV'></video></div>
+            <div class="video"> <video src='vids/6.MOV'></video></div>
+            <div class="video"> <video src='vids/7.MOV'></video></div>
+            <div class="video"> <video src='vids/8.MOV'></video></div>
+            <div class="video"> <video src='vids/9.MOV'></video></div>
+            
+
+        </div>
+        <div class="popup-video">
+        <span>&times;</span>
+            <div class="video"> <video src='vids/1.MOV' muted autoplay controls></video></div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+<script>
+    document.querySelectorAll('.video-container video').forEach(vid=>{
+        vid.onclick = () => {
+            document.querySelector('.popup-video').style.display = 'block'
+            document.querySelector('.popup-video video').src = vid.getAttribute('src')
+            document.querySelector('.popup-video video').muted = !document.querySelector('.popup-video video').muted
+        }
+    })
+    document.querySelector('.popup-video span').onclick = () => {
+        document.querySelector('.popup-video').style.display = 'none'
+        document.querySelector('.popup-video video').muted = !document.querySelector('.popup-video video').muted
+    }
+</script>
+</body>
+
+</html>
