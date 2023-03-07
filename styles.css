@@ -162,4 +162,25 @@ img{
 
     
 }
-  
+#index {
+    display: flex;
+    background-color: black;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.user_name{
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+    font-size: large;
+    padding: 10px;
+}
+.button {
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+    font-size: large;
+    padding: 10px;
+}
