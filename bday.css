@@ -1,11 +1,12 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
-html{
+
+html {
     background-color: black;
     min-height: 100%;
-    
+
 }
+
 .navbar {
     height: 10vh;
     overflow: hidden;
@@ -26,7 +27,7 @@ html{
 
 /* The dropdown container */
 .dropdown {
-    
+
     float: left;
     overflow: hidden;
 }
@@ -83,15 +84,16 @@ html{
 }
 
 
-.home{
-    scroll-snap-type:y mandatory;
+.home {
+    scroll-snap-type: y mandatory;
 }
+
 .main {
     display: flex;
-        flex-direction: row;
-        font-size: 30px;
-        text-align: center;
-        
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+
 }
 
 .left {
@@ -103,36 +105,38 @@ html{
     color: #ddd;
     font-size: 48px;
     font-family: 'Dancing Script';
-    
+
 }
+
 .words {
     margin-left: 30px;
     margin-right: 30px;
     height: 80vh;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     place-items: center;
     padding: 10px;
     flex: 50%;
     color: #ddd;
     font-size: 48px;
-    
+
 
 }
-.subtitle{
-    
+
+.subtitle {
+
     margin-left: 30px;
-    
+    height: 80vh;
     margin-right: 30px;
-    
-    
+    display: grid;
+
     padding: 10px;
     
     color: #bbb;
     font-size: 20px;
-        
+
 }
-.left-last{
+
+.left-last {
     height: 80vh;
     display: grid;
     place-items: center;
@@ -143,22 +147,23 @@ html{
     font-family: 'Dancing Script';
 
 }
+
 .right {
     height: 80vh;
     padding: 10px;
     flex: 50%;
-    }
+}
 
 
-img{
+img {
     height: 80vh;
     width: 45;
 }
 
 
-.desc{
+.desc {
     font-size: 20px;
-    
+
     font-family: 'Merriweather', sans-serif;
 }
 
@@ -166,27 +171,31 @@ img{
     .main {
         flex-direction: column;
     }
-    .left{
+
+    .left {
         height: 50vh;
         color: white;
-    } 
-    .right{
+    }
+
+    .right {
         height: 50vh;
     }
-    .landing_image{
+
+    .landing_image {
         height: 50vh;
     }
-    
+
 }
 
 
-.second{
-    
+.second {
+
     margin-right: 20px;
     margin-top: 100px;
 
-    
+
 }
+
 #index {
     display: flex;
     background-color: black;
@@ -195,13 +204,15 @@ img{
     justify-content: center;
     flex-direction: row;
 }
-.user_name{
+
+.user_name {
     background-color: transparent;
     color: white;
     border: 3px solid white;
     font-size: large;
     padding: 10px;
 }
+
 .button {
     background-color: transparent;
     color: white;
@@ -209,20 +220,18 @@ img{
     font-size: large;
     padding: 10px;
 }
+
 .pastel-green-button {
     background-color: #b2d8b2;
     /* Pastel green color */
     color: #ffffff;
     /* White text color */
     border: none;
-    width: 300px;
-    height: 150px;
     border-radius: 10px;
     padding: 12px 20px;
-    
+    font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    font-size: 30px;
 }
 
 .pastel-green-button:hover {
